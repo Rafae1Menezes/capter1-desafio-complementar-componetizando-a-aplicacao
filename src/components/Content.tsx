@@ -1,4 +1,5 @@
-import { MovieCard } from './MovieCard';
+import { memo } from 'react';
+import  MovieCard  from './MovieCard';
 
 interface MovieProps {
    imdbID: string;
@@ -23,7 +24,7 @@ interface Props {
 }
 
 
-export function Content(props: Props) {
+const Content = (props: Props) => {
   
    return (
       <div className="container">
@@ -41,3 +42,6 @@ export function Content(props: Props) {
       </div>
    )
 }
+
+export default memo(Content, (prevProps, NextProps) => Object.is(prevProps.movies, NextProps.movies))
+// export default Content
