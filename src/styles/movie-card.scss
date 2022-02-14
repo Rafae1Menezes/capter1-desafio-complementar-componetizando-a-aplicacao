@@ -1,5 +1,8 @@
 .movie-card {
   position: relative;
+  width: 228px;
+  height: 340px;
+
 
   img {
     width: 14.31rem;
@@ -7,6 +10,7 @@
   }
 
   > div {
+    
     position: absolute;
     top: 0;
     bottom: 0;
@@ -21,6 +25,7 @@
     .movie-info {
       max-width: 12.31rem;
       width: 100%;
+      
       
       display: flex;
       flex-direction: column;
@@ -57,3 +62,4 @@
     }
   }
 }
+
