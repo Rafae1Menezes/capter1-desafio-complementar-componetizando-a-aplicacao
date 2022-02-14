@@ -47,7 +47,7 @@ const Content = ({ movies, selectedGenre }: Props) => {
                 className='List'
                 width={width}
                 height={800}
-                style={{height: 'calc(100vh - 140px)'}}
+                style={{ height: 'calc(100vh - 140px)' }}
                 rowCount={Math.ceil(ITEMS_COUNT / itemsPerRow)}
                 rowHeight={400}
                 rowRenderer={
@@ -58,7 +58,7 @@ const Content = ({ movies, selectedGenre }: Props) => {
 
                     for (let i = fromIndex; i < toIndex; i++) {
                       items.push(
-                        <MovieCard 
+                        <MovieCard
                           poster={movies[i].Poster}
                           rating={movies[i].Ratings[0].Value}
                           runtime={movies[i].Runtime}
